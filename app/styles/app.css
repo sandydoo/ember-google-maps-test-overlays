@@ -1,0 +1,10 @@
+.map {
+    width: 500px;
+    height: 500px;
+}
+
+.overlay {
+    font-size: 12px;
+    background-color: red;
+    padding: 5px;
+}

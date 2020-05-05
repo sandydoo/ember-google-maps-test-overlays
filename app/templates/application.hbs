@@ -1,3 +1,13 @@
-<h2 id="title">Welcome to Ember</h2>
+<h2 id="title">Overlay Test</h2>
+
+<GMap @lat={{this.london.lat}} @lng={{this.london.lng}} @zoom={{12}} class="map" as |g|>
+  {{#each locations as |loc|}}
+    <g.overlay @lat={{loc.lat}} @lng={{loc.lng}}>
+      <div class="overlay">
+        {{loc.id}}
+      </div>
+    </g.overlay>
+  {{/each}}
+</GMap>
 
 {{outlet}}
